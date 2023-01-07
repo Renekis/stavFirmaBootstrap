@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=.5" />
+    <title>Podpinka-cviko 6.1.</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <div class="overlay hidden"></div>
+    <div class="allPage">
+      <!-- NAVBAR -->
+
+      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Stavební firma</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Domů</a>
+              <a class="nav-link" href="#">O nás</a>
+              <a class="nav-link" href="#projects">Činnost</a>
+              <a class="nav-link" href="#price-list">Ceník</a>
+              <a class="nav-link" href="#contact">Kontakty</a>
+              <a class="nav-link" href="#form">Formulář</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- HERO -->
+      <div class="container-fluid hero">
+        <div class="col-6 hero-text text-justify">
+          <h1>Postavíme Váš sen</h1>
+          <p class="d-none d-md-block">
+            Naše společnost se zabývá stavebními činnostmi v celém svém rozsahu.
+            Stavební proces zajišťujeme od samotného prvopočátečního projektu až
+            k finální realizaci stavby. Hlavní činnosti jsme rozšířili o další
+            služby s tím spojené, abychom co nejvíce prací realizovali
+            samostatně, případně v kooperaci s našimi léty prověřenými
+            dodavateli. Díky tomu jsme schopni stavební projekty komplexně
+            zorganizovat tak, aby na sebe veškeré práce navzájem navazovaly a
+            stavby byly hotové v co nejkratším možném čase. Disponujeme
+            nejmodernější stavební technikou a potřebnými stroji.
+          </p>
+        </div>
+      </div>
+      <!-- ABOUT ----- CAROUSEL -->
+
+      <div class="container-fluid about" id="about">
+        <div class="row">
+          <h1 class="my-3">O naší firmě</h1>
+
+          <!-- CAROUSEL -->
+          <div class="col-lg-8">
+            <div id="carouselExampleCaptions" class="carousel slide">
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/car1.avif" class="d-block w-100" alt="..." />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Hodně víme</h5>
+                    <p>
+                      Načetli jsme všechno, co se dá a teď umíme prodat naše
+                      odborné znalosti.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="img/car2.avif" class="d-block w-100" alt="..." />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Smysl pro detail</h5>
+                    <p>
+                      Pomůžeme vám vše naplánovat od základu, záleží jen na vás,
+                      jaký styl preferujete.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="img/car3.avif" class="d-block w-100" alt="..." />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Demolice</h5>
+                    <p>
+                      Náš tým vlastní dvě velká kladiva a krabičku sirek, je-li
+                      na Vašem pozemku zástavba.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- ABOUT - TEXT NAPRAVO -->
+
+          <div class="col-lg-4">
+            <h2>Jsme fakt dobří</h2>
+            <p>
+              Specializujeme se na stavby rodinných domů včetně jejich částí.
+              Samotnou výstavbou se zabýváme již dlouho, stojí za námi velké
+              množství staveb a s tím spojených, spokojených zákazníků. Za naše
+              mnohaleté působení jsme získali zkušenosti, ze kterých neustále
+              čerpáme při každé realizaci nových projektů. Náš tým tvoří
+              odborníci s mnohaletou praxí. Díky odpovídajícímu technickému
+              Provident<span class="font-text"
+                >Lorem. <span class="tooltiptext">lorem</span></span
+              >
+              vybavení realizujeme stavby pomocí aktuálních stavebních
+              technologií, efektivně a kvalitně.
+            </p>
+            <p>
+              Specializujeme se na stavby rodinných domů včetně jejich částí.
+              Samotnou výstavbou se zabýváme již dlouho, stojí za námi velké
+              množství staveb a s tím spojených, spokojených zákazníků. Za naše
+              mnohaleté působení jsme získali zkušenosti, ze kterých neustále
+              čerpáme při každé realizaci nových projektů. Náš tým tvoří.
+            </p>
+            <!-- TOOLTIP -->
+          </div>
+        </div>
+      </div>
+      <!-- PROJEKTY FIRMY -->
+
+      <div class="container-fluid projects" id="projects">
+        <h2 class="mb-4">Činnost naší firmy</h2>
+        <div class="row">
+          <div class="col-12 col-md-6 col-xl-4">
+            <img
+              src="img/proj1.avif"
+              class="d-none d-sm-block w-100 my-3"
+              alt=""
+            />
+            <h3>Měříme, vrtáme</h3>
+            <p>
+              Vrtání je třískové obrábění materiálu rotačním pohybem nástroje.
+              Vrták koná hlavní řezný pohyb, ale i vedlejší. Vrtáním se v
+              obrobku vytvářejí otvory válcového tvaru, které mohou být průchozí
+              nebo slepé
+            </p>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4">
+            <img
+              src="img/proj2.avif"
+              class="d-none d-sm-block w-100 my-3"
+              alt=""
+            />
+            <h3>Lezeme po střechách</h3>
+            <p>
+              Provádíme výrobu veškerých klempířskych prvků na míru.(okapní a
+              štítové plechy, parapety) Vsaďte na jistotu a žijte v suchu.
+              Kompletní realizace střech od žlabu až po hromosvod.
+            </p>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4">
+            <img
+              src="img/proj1.avif"
+              class="d-none d-sm-block w-100 my-3"
+              alt=""
+            />
+            <h3>Kreslíme si</h3>
+            <p>
+              Naše činnost spočívá v jednoznačném rozdělení technických výkresů,
+              stanovení jejich formátů (rozměru kreslícího papíru), úpravy
+              výkresových listů, obsahu a členěn.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- CENÍK SLUŽEB -->
+      <link rel="stylesheet" name="#contact" />
+      <div class="container-fluid price-list">
+        <h2 class="mb-3">Cení služeb</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Typ objektu</th>
+              <th scope="col">Projekt</th>
+              <th scope="col">Stavba</th>
+              <th scope="col">Demolice</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Dřevěný dům</th>
+              <td>50 000 Kč</td>
+              <td>3 700 000 Kč</td>
+              <td>10 Kč</td>
+            </tr>
+            <tr>
+              <th scope="row">Zděný dům</th>
+              <td>60 000 Kč</td>
+              <td>4 500 000 Kč</td>
+              <td>500 000 Kč</td>
+            </tr>
+            <tr>
+              <th scope="row">Zemljanka</th>
+              <td>zdarma</td>
+              <td>dva čaje</td>
+              <td>taky zdarma</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- FOOTER -->
+
+      <div class="container-fluid contact" id="contact">
+        <div class="row">
+          <h2 class="mb-4">Kontakt</h2>
+          <div class="col-6 contact-left">
+            <div class="contact-item d-flex mb-3">
+              <div class="icon fs-4 text-danger"></div>
+              <div class="text ms-3">
+                <img src="" alt="" />
+                <i class="bi bi-at"></i>
+                <h3 class="fs-5">E-mail</h3>
+                <p class="text-muted">info@firma.cz</p>
+              </div>
+            </div>
+            <div class="contact-item d-flex mb-3">
+              <div class="icon fs-4 text-danger">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="text ms-3">
+                <i class="bi bi-telephone-fill"></i>
+                <h3 class="fs-5">Telefon</h3>
+                <p class="text-muted">(+420) 123 456 789</p>
+              </div>
+            </div>
+            <div class="contact-item d-flex mb-3">
+              <div class="icon fs-4 text-danger">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="text ms-3">
+                <i class="bi bi-envelope"></i>
+                <h3 class="fs-5">Adresa</h3>
+                <p class="text-muted">
+                  17.listopadu 2172/15 <br />Ostrava-Poruba
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 map">
+            <div class="mapouter">
+              <div class="gmap_canvas">
+                <iframe
+                  width="600"
+                  height="500"
+                  id="gmap_canvas"
+                  src="https://maps.google.com/maps?q=vysok%C3%A1%20%C5%A1kola%20b%C3%A1%C5%88sk%C3%A1&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                  frameborder="0"
+                  scrolling="no"
+                  marginheight="0"
+                  marginwidth="0"
+                  class="d-none d-sm-block"
+                ></iframe
+                ><br /><style>
+                  .mapouter {
+                    position: relative;
+                    text-align: right;
+                    height: 500px;
+                    width: 600px;
+                  }</style
+                ><a href="https://www.embedgooglemap.net">maps for websites</a
+                ><style>
+                  .gmap_canvas {
+                    overflow: hidden;
+                    background: none !important;
+                    height: 500px;
+                    width: 600px;
+                  }
+                </style>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row form mt-2" id="form">
+          <div class="col-8 mx-auto">
+            <form>
+              <div class="form-group mb-1">
+                <label for="form-name">Jméno</label>
+                <input
+                  type="name"
+                  class="form-control"
+                  id="form-name"
+                  placeholder="Jméno Příjmení"
+                />
+              </div>
+
+              <div class="form-group mb-1">
+                <label for="form-email">Emailová adresa</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="form-email"
+                  aria-describedby="emailHelp"
+                  placeholder="jmeno@email.cz"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="form-message">Zpráva</label>
+                <textarea
+                  type="text"
+                  class="form-control"
+                  id="form-message"
+                  placeholder="Váš vzkaz..."
+                ></textarea>
+              </div>
+              <div class="form-group form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label" for="exampleCheck1"
+                  >Nejsem robot</label
+                >
+              </div>
+              <button class="btn btn-outline-light">Odeslat</button>
+            </form>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col bottomNav">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#">Stavební firma</a>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarNavAltMarkup"
+                  aria-controls="navbarNavAltMarkup"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Domů</a
+                    >
+                    <a class="nav-link" href="#">O nás</a>
+                    <a class="nav-link" href="#projects">Činnost</a>
+                    <a class="nav-link" href="#price-list">Ceník</a>
+                    <a class="nav-link" href="#contact">Kontakty</a>
+                    <a class="nav-link" href="#form">Formulář</a>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const navLinks = document.querySelectorAll(".nav-link");
+      const menuToggle = document.getElementById("navbarNavAltMarkup");
+      const bsCollapse = new bootstrap.Collapse(menuToggle, { toggle: false });
+      navLinks.forEach((l) => {
+        l.addEventListener("click", () => {
+          bsCollapse.toggle();
+        });
+      });
+    </script>
+    <script src="scritpt.js"></script>
+  </body>
+</html>
