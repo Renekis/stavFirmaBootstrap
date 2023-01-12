@@ -19,7 +19,7 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 80vh;
+  min-height: 85vh;
   position: absolute;
 }
 .hero-text {
@@ -37,56 +37,12 @@ p {
   left: 50px;
 }
 
-.close-modal {
-  position: absolute;
-  top: 1.2rem;
-  right: 2rem;
-  font-size: 5rem;
-  color: #333;
-  cursor: pointer;
-  border: none;
-  background: none;
-}
-
-/* MODAL PERE */
-.hidden {
-  display: none;
-}
-
-#souhlasim {
-  position: absolute;
-  top: 70vh;
-}
-
-.modal-text {
-  position: absolute;
-  top: 50vh;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 70%;
-
-  background-color: white;
-  padding: 6rem;
-  border-radius: 20px;
-  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
-  z-index: 15;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 400vh;
-  backdrop-filter: blur(3px);
-  z-index: 10;
-}
-
 /* ABOUT */
 .about {
   position: relative;
   top: 82vh;
   text-align: center;
+  padding-top: 5vh;
 }
 .about img {
   max-height: 70vh;
@@ -109,12 +65,14 @@ p {
   position: relative;
   top: 90vh;
   text-align: center;
+  padding-top: 7vh;
 }
 
 .price-list {
   position: relative;
   top: 100vh;
   text-align: center;
+  padding-top: 7vh;
 }
 
 /* TABULKA */
@@ -139,6 +97,9 @@ p {
 .form-group {
   text-align: left;
   color: white;
+}
+.contact {
+  padding-top: 7vh;
 }
 .contact > .col-8 {
   justify-content: center;

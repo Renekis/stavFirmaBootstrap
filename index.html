@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=.5" />
-    <title>Podpinka-cviko 6.1.</title>
+    <title>Podpinka - stavební firma</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -18,7 +18,6 @@
     />
   </head>
   <body>
-    <div class="overlay hidden"></div>
     <div class="allPage">
       <!-- NAVBAR -->
 
@@ -39,7 +38,7 @@
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
               <a class="nav-link active" aria-current="page" href="#">Domů</a>
-              <a class="nav-link" href="#">O nás</a>
+              <a class="nav-link" href="#about">O nás</a>
               <a class="nav-link" href="#projects">Činnost</a>
               <a class="nav-link" href="#price-list">Ceník</a>
               <a class="nav-link" href="#contact">Kontakty</a>
@@ -63,8 +62,18 @@
             stavby byly hotové v co nejkratším možném čase. Disponujeme
             nejmodernější stavební technikou a potřebnými stroji.
           </p>
+
+          <button
+            type="button"
+            class="btn btn-outline-warning"
+            data-bs-toggle="modal"
+            data-bs-target="#booking"
+          >
+            Cookies
+          </button>
         </div>
       </div>
+
       <!-- ABOUT ----- CAROUSEL -->
 
       <div class="container-fluid about" id="about">
@@ -231,9 +240,9 @@
         </div>
       </div>
       <!-- CENÍK SLUŽEB -->
-      <link rel="stylesheet" name="#contact" />
-      <div class="container-fluid price-list">
-        <h2 class="mb-3">Cení služeb</h2>
+
+      <div class="container-fluid price-list" id="price-list">
+        <h2 class="mb-3">Ceník služeb</h2>
         <table class="table">
           <thead>
             <tr>
@@ -337,8 +346,9 @@
             </div>
           </div>
         </div>
-        <div class="row form mt-2" id="form">
+        <div class="row form mt-2 py-2" id="form">
           <div class="col-8 mx-auto">
+            <h2 style="color: white">Kontaktní formulář</h2>
             <form>
               <div class="form-group mb-1">
                 <label for="form-name">Jméno</label>
@@ -405,7 +415,7 @@
                     <a class="nav-link active" aria-current="page" href="#"
                       >Domů</a
                     >
-                    <a class="nav-link" href="#">O nás</a>
+                    <a class="nav-link" href="#about">O nás</a>
                     <a class="nav-link" href="#projects">Činnost</a>
                     <a class="nav-link" href="#price-list">Ceník</a>
                     <a class="nav-link" href="#contact">Kontakty</a>
@@ -418,7 +428,60 @@
         </div>
       </div>
     </div>
+    <!-- MODAL -->
+    <div
+      class="modal hide fade"
+      id="booking"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+      style="display: none"
+      aria-hidden="true"
+      aria-labelledby="exampleModalLabel"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <p class="modal-title fs-5" id="exampleModalLabel">Cookies</p>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Za účelem zlepšení poskytovaných služeb využívají naše stránky
+            soubory cookies. Jsou to malé soubory, které ukládají informace ve
+            Vašem prohlížeči a běžně slouží k rozlišování jednotlivých
+            uživatelů. Osoba uživatele však není na základě těchto informací
+            identifikovatelná. Soubory cookies tak pomáhají např. při
+            zjišťování, které stránky a funkce používají návštěvníci nejčastěji,
+            na základě toho můžeme co nejlépe přizpůsobit naši nabídku Vašim
+            požadavkům.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-primary"
+              data-bs-dismiss="modal"
+            >
+              Souhlasím
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              id="more-cookies"
+              onclick="newTab()"
+            >
+              Zjisti více
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!-- SCRIPTS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
@@ -439,6 +502,39 @@
         });
       });
     </script>
-    <script src="scritpt.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(window).on("load", function () {
+        $("#booking").modal("show");
+      });
+    </script>
+    <script>
+      navLinks.forEach((l) => {
+        l.addEventListener("click", () => {
+          bsCollapse.toggle();
+        });
+      });
+    </script>
+    <script>
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]'
+      );
+      const tooltipList = [...tooltipTriggerList].map(
+        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+      );
+    </script>
+    <script>
+      let button = document.getElementById("more-cookies");
+      button.onclick = function newTab(url) {
+        window.open(
+          "https://www.vzornepravo.cz/cz/zasady-pouzivani-souboru-cookies.c-11.html",
+          "_blank"
+        );
+      };
+    </script>
   </body>
 </html>
